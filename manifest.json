@@ -1,0 +1,33 @@
+{
+    "name": "Inject MV2(Content)",
+    "description": "Decatur Investments Lead Dashboard is a product of Decatur Investments powered by 360SynergyTech. It is build to get leads status and stats into Podio activity section.",
+    "version": "0.01",
+   
+    "author": "360synergytech",
+    "icons": {
+        "16": "Chart.png",
+        "48": "Chart1.png",
+        "128": "Chart3.png"
+      },
+    "content_scripts": [
+        {
+            
+            "html":[
+                 "360Synergy.html"
+            ],
+            "js": [
+                "contentScript.js"
+            ],
+            "css":[
+                "contentScript.css"
+            ],
+            "matches": [
+                // "<all_urls>"
+                "https://podio.com/360synergytech-llapf2k0wa/project-management"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "manifest_version": 2
+    
+}
