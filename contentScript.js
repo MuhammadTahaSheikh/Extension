@@ -469,12 +469,12 @@ const init = function() {
 
 <div class="sl-div1">
     <div class="sl-div1p">SMS In/Out Graph</div>
-    <img src="Chart.png"/>
+    <img src="https://github.com/MuhammadTahaSheikh/Extension/blob/master/image/Chart.png?raw=true"/>
 </div>
 
 <div class="sl-div2"> 
     <div class="sl-div2p">Marketing Expense</div>
-<img src="Chart1.png"/></div>
+<img src="https://github.com/MuhammadTahaSheikh/Extension/blob/master/image/Chart1.png?raw=true"/></div>
 
 </div>
 
@@ -520,7 +520,7 @@ const init = function() {
 <div class="lldiv">
     Profit
 </div>
-<img src="Chart3.png"/>
+<img src="https://github.com/MuhammadTahaSheikh/Extension/blob/master/image/Chart3.png?raw=true"/>
 </div>
 
 

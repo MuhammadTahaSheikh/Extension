@@ -4,11 +4,7 @@
     "version": "0.01",
    
     "author": "360synergytech",
-    "icons": {
-        "16": "Chart.png",
-        "48": "Chart1.png",
-        "128": "Chart3.png"
-      },
+    
     "content_scripts": [
         {
             
