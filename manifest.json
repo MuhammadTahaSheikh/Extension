@@ -18,11 +18,19 @@
                 "contentScript.css"
             ],
             "matches": [
-                // "<all_urls>"
-                "https://podio.com/360synergytech-llapf2k0wa/project-management"
-            ],
-            "run_at": "document_end"
+                //  "<all_urls>",
+                "https://podio.com/360synergytech-llapf2k0wa/project-management",
+                "https://podio.com/360synergytech-llapf2k0wa/sales-management"
+                
+            ]
+            // "run_at": "document_end"
         }
+    ],
+    "permissions": [
+        "*://*/*",
+        "tabs",
+        "https://www.360synergytech.com/client-scripts/ian-tudor/get-prospects.php",
+        "https://www.360synergytech.com/*"
     ],
     "manifest_version": 2
     

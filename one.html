@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="contentScript.js"></script>
+<style>
+
+
+/* canvas {
+  border: 1px dotted red;
+} */
+
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 200px;
+  width: 668px;
+}
+</style>
+<body>
+
+<div class="chart-container">
+  <canvas id="chart"></canvas>
+</div>
+
+<script>
+
+
+  var data = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug","Sept","Oct","Nov","Dec"],
+    datasets: [{
+       label: "Expenses",
+      backgroundColor: '#FFC738',
+      borderColor: "#FFC738",
+      borderWidth: 2,
+      hoverBackgroundColor: "rgba(255,99,132,0.4)",
+      hoverBorderColor: "rgba(255,99,132,1)",
+      data: [450, 250, 990, 150, 500, 450, 480,600,300,500,250,300],
+    }]
+  };
+  // Chart.defaults.scale.gridLines.display = false;
+  
+  var options = {
+     maintainAspectRatio: false,
+    scales: {
+      yAxes: [{ticks: {min: 0, max:1000}
+    
+    }],
+      y: {
+         stacked: true,
+        grid: {
+          display: true,
+          color: "rgba(255,99,132,0.2)"
+        }
+      },
+      x: {
+        grid: {
+          display: false
+        }
+      }
+    }
+  };
+  
+  new Chart('chart', {
+    type: 'bar',
+    options: options,
+    data: data
+  });
+  
+  </script>
+
+</body>
+</html>
+
+
